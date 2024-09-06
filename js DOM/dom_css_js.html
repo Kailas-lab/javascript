@@ -1,0 +1,30 @@
+<style>
+    div{
+        background-color: blanchedalmond;
+        width: 100px;
+        height: 100px;
+        /*transition: 2s;*/
+    }
+
+    .widthmax{
+        width: 700px;
+    }
+</style>
+
+<div id="box"></div>
+
+<button onclick="change()">change color</button>
+
+<script>
+    //select box
+    var box=document.getElementById("box")
+
+    // function change(){
+    //     box.style.backgroundColor="green"
+    // }
+
+    function change(){
+        box.setAttribute("class","widthmax")
+    }
+    //see this changes in console also while clicking
+</script>

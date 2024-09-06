@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<!--use js ,and implemented many attributes by use of function in script-->
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="changeStyle()">Click Me!</button>
+
+<script>
+function changeStyle() {
+  var element = document.getElementById('demo');
+  element.style.backgroundColor = 'green';
+  element.style.color = 'white';
+  element.style.fontSize = '20px';
+}
+</script>
+
+<!--method 2 for single style attribute-->
+
+<p id="one">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('one').style.fontSize='40px'">Click Me!</button>
+
+<!--show the hidden elements, display none for hidden and block for show the hidden-->
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="two" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('two').style.display='block'">Click Me!</button>
+
+
+
+</body>
+</html>

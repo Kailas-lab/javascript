@@ -1,0 +1,27 @@
+<!--
+
+<div>
+    <h1>
+        kailas
+    </h1>
+</div>
+
+<script>
+    var div=document.querySelector("div")
+    div.append("hello")
+   // div.prepend("hello")
+</script>
+
+-->
+
+<div>
+    <h1>kailas</h1>
+    <h1>ganesh</h1>
+</div>
+
+<script>
+    var div=document.querySelector("div")
+    var h1=document.createElement("h1")
+    h1.textContent="hello"
+    div.insertAdjacentElement("beforeBegin",h1)
+</script>

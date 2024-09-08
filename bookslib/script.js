@@ -15,7 +15,7 @@ addpopupbtn.addEventListener("click",function(){
 
 var cancelbtn=document.getElementById("cancel")
 
-cancelpopup.addEventListener("click",function(event){
+cancel.addEventListener("click",function(event){
     event.preventDefault()
     popupoverlay.style.display="none"
      popupbox.style.display="none"
@@ -26,7 +26,7 @@ cancelpopup.addEventListener("click",function(event){
 var container=document.querySelector(".container")
 var addbook=document.getElementById("add")
 var booktitle=document.getElementById("book-title-input")
-var bookauthor=document.getElementById("book-title-author")
+var bookauthor=document.getElementById("book-author-input")
 var bookdescribe=document.getElementById("description-input")
 
 addbook.addEventListener("click",function(){
@@ -35,7 +35,8 @@ addbook.addEventListener("click",function(){
     div.setAttribute("class","book-container")
     div.innerHTML=`<h2>${booktitle.value}</h2>
                    <h5>${bookauthor.value}</h5>
-                   <p>${bookdescribe.value}</p>`
+                   <p>${bookdescribe.value}</p>
+                   <button>Delete</button>`
     container.append(div)
     popupoverlay.style.display="none"
     popupbox.style.display="none"

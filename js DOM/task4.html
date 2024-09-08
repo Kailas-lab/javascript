@@ -1,0 +1,14 @@
+<!--when h1 click it remove task by use of event-->
+<h1 onclick="deleteitem(event)" >one</h1>
+<h1 onclick="deleteitem(event)">two</h1>
+<h1 onclick="deleteitem(event)">three</h1>
+<h1 onclick="deleteitem(event)">four</h1>
+<h1 onclick="deleteitem(event)">five</h1>
+<h1 onclick="deleteitem(event)">six</h1>
+
+<script>
+    
+    function deleteitem(event){
+        event.target.remove()
+    }
+</script>

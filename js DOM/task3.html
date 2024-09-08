@@ -1,0 +1,16 @@
+<!--button name task-->
+
+<h1 id = "result">Name</h1>
+
+<button onclick="update(event)">kailas</button>
+<button onclick="update(event)">sai</button>
+<button onclick="update(event)">subu</button>
+
+<script>
+
+    //select h1
+    var h1=document.getElementById("result")
+    function update(){
+     h1.textContent=event.target.textContent
+    }
+</script>

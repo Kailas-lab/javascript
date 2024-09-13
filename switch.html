@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<script>
+let trafficLight = "green";
+let action;
+
+switch (trafficLight) {
+  case "red":
+    action = "Stop immediately.";
+    break;
+  case "yellow":
+    action = "Prepare to stop.";
+    break;
+  case "green":
+    action = "Proceed or continue driving.";
+    break;
+  default:
+    action = "Invalid traffic light color.";
+}
+
+console.log(action);
+</script>
+
+</body>
+</html>
